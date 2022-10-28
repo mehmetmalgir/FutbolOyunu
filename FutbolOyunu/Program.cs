@@ -15,7 +15,7 @@ namespace FutbolOyunu
             // 1. Takım için 1 GoalKeeper, 4 Defender, 6 Midfielder, 3 Attacker Oluşturulacak!!! (taktiklere göre diziden çekilecek)
 
             GoalKeeper gkTeam1 = new GoalKeeper("Berkay", 30);
-
+            
             Defender df1Team1 = new Defender("Ahmet", 25);
             Defender df2Team1 = new Defender("Salih", 26);
             Defender df3Team1 = new Defender("Tehtap", 27);
@@ -151,14 +151,14 @@ namespace FutbolOyunu
                 Console.WriteLine($"{takim1Adi} Takımının Oyuncuları : ");
                 Console.WriteLine(" ");
                 foreach (var item in takim1)
-                    Console.WriteLine($"İsim : {item.FullName} - Forma Numarası : {item.ShirtNumber} + {item.FinishingPlay()} + {item.GeneralScore()} + {item.PassingPlay()} + {item.TacklingPlay()}");
+                    Console.WriteLine($"İsim : {item.FullName} - Forma Numarası : {item.ShirtNumber} ");
 
                 Console.WriteLine("------------------------------------");
 
                 Console.WriteLine($"{takim2Adi} Takımının Oyuncuları : ");
                 Console.WriteLine(" ");
                 foreach (var item in takim2)
-                    Console.WriteLine($"İsim : {item.FullName} - Forma Numarası : {item.ShirtNumber}+ {item.FinishingPlay()} + {item.GeneralScore()} + {item.PassingPlay()}+ {item.TacklingPlay()}");
+                    Console.WriteLine($"İsim : {item.FullName} - Forma Numarası : {item.ShirtNumber}");
 
                 Console.WriteLine("------------------------------------");
 
